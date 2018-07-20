@@ -1,0 +1,114 @@
+<% provide(:title, 'Sign up') %>
+
+<% if logged_in? %>
+<h1>You are already logged in buddy!</h1>
+
+<%else%>
+ <%= render 'shared/error_messages' %>
+<%= content_tag :div,
+      id:"wizard-form",
+      data:{
+            user: @user.to_json()
+      } do %>
+      <div>
+        <form-wizard title="" subtitle="" color="#ed6550"@on-complete="onComplete">
+            <tab-content title="Personal details"
+                         icon="ti-user">
+                  <el-form :model="user" :rules="rules" ref="form">
+                    <el-form-item for="name" label="Name" prop="name">
+                      <el-input v-model="user.name" placeholder="First name"></el-input>
+                    </el-form-item>
+                    <el-form-item label="Email" prop="email">
+                      <el-input v-model="user.email" placeholder="Email"></el-input>
+                    </el-form-item>
+                  </el-form>
+            </tab-content>
+            <tab-content title="Health Information"
+                         icon="ti-settings">
+              <el-form :model="user" ref="form">
+                    <el-form-item label="Date Of Birth" prop="dob">
+                      <el-date-picker type="date" v-model="user.dob"> 
+                      </el-date-picker>
+                    </el-form-item>
+                    <el-form-item label="Gender" prop="gender">
+                      <el-radio-group v-model="user.gender">
+                      <el-radio label="Male"></el-radio>
+                      <el-radio label="Female"></el-radio>
+                    </el-radio-group>
+                    </el-form-item>
+                    <el-form-item  label="Weight (in kg)" prop="weight">
+                      <el-input v-on:click="convertDate" v-model="user.weight" placeholder="Weight"></el-input>
+                    </el-form-item>
+                    <el-form-item label="Height (in cm)" prop="height">
+                      <el-input v-model="user.height" placeholder="Height"></el-input>
+                    </el-form-item>
+                     <el-form-item label="Diet Type" prop="diet_type">
+                        <el-select v-model="user.diet_type" >
+                        <% ['vegetarian', 'vegan', 'pesciterian', 'raw', 'everything', 'NA'].each do |x| %>
+                      <el-option label='<%= x %>' value='<%=x%>'></el-option>
+                        <% end %>
+                  </el-select>
+                  </el-form-item>
+                     <el-form-item label="Blood Type" prop="blood_type">
+                        <el-select v-model="user.blood_type" >
+                        <% ['A+','A-','B+','B-','AB+','AB-','O+','O-','NA'].each do |x| %>
+                      <el-option label='<%= x %>' value='<%=x%>'></el-option>
+                        <% end %>
+                  </el-select>
+                    </el-form-item>
+                  </el-form>
+            </tab-content>
+            <tab-content title="Last step"
+                         icon="ti-check">
+              <el-form :model="user" status-icon :rules="rules" ref="form">
+                    <el-form-item label="Password" prop="password">
+                      <el-input type="password" v-model="user.password" ></el-input>
+                    </el-form-item>
+                    <el-form-item label="Password Confirmation" prop="password_confirmation">
+                      <el-input  type="password" v-model="user.password_confirmation" ></el-input>
+                    </el-form-item>
+                  </el-form>
+            </tab-content>
+            <!-- <el-button slot="finish">Finish</button> -->
+        </form-wizard> </div>
+      <% end %>
+      <%end%>
+
+<!-- 
+<% provide(:title, 'Sign up') %>
+<h1>Signup</h1>
+<p> this is the sign up page</p>
+<%= content_tag :div,
+      id: 'new-user-form',
+      data: {
+            user: @user.to_json(),
+      } do %>
+      <form >
+            <label for="name">Name</label>
+          <input v-model="user.name" id="name">
+           <label for="email">Email</label>
+          <input v-model="user.email" id="email">
+           <label for="age">Age</label>
+          <input v-model="user.age" id="age">
+            <label for="height">Height</label>
+          <input v-model="user.height" id="height">
+           <label for="weight">Weight</label>
+          <input v-model="user.weight" id="weight">
+           <label for="diet_type">Diet type</label>
+          <input v-model="user.diet_type" id="diet_type">
+           <label for="blood_type">Blood Type</label>
+          <input v-model="user.blood_type" id="blood_type">
+
+           <label for="password">Password</label>
+          <input type="password" v-model="user.password" id="password">
+           <label for="password_confirmation">Confirm Password</label>
+          <input type="password" v-model="user.password_confirmation" id="password_confirmation">
+         
+          <button><input 
+            value="Submit Your data!" 
+            v-on:click="submit"
+          ></button>
+
+      <% end %>
+
+ -->

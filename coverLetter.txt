@@ -1,0 +1,22 @@
+Dear Nextbeat team,
+
+My name is Jack I'm a former International Economic Lawyer, and current explorer of various aspects of the technology specs. My dream is to work in Japan, in the tech space and as you will see from my past experience I have been involved in  social issues. When I saw your posting, checked out your website, it looked like a sign of the gods. However, I saw that you need someone who know Ruby and Vue which I don't know. Instead of trying to show you what I am good at, I want to show you how I tackle obstacles. So, I decided to build an app using Vuejs and Ruby on Rails, which resulted in the following app: 54.202.194.127 (just enter these numbers in your browser). Please go to 54.202.194.127/about to learn more about the app (hopefully it won't be down, the set up is not great. I will set up a proper Nginx server if I have time this week).
+
+
+You can learn more about the app in the /about page.
+ A bit about me, I studied International Economic Law at Sorbonne University in Paris and then got a master of Law and Development at Melbourne University. After I graduated I founded MMP an energy management solutions company that I still overview from a distance. I decided to make that change because I have always been fascinated by science and especially information science. 
+
+ During this journey, I learned more than I can dream of, from setting up business process automation tools to writing silly scripts to animate my screen. One of my big passion came to me in early 2015 when I read Satoshi Nakamoto's white paper about Bitcoin. I read everything I could about it and discovered how little I knew about the IT field. In this journey, I decided to learn more about CyberSecurity and undertook an amazing full-time course. We ended the course with undertook a vulnerability report for a non-profit of over 500 employees. I fell in love with IT Security and hope to have it in play during my career. 
+
+ During that experience, I had a bit of an epiphany during which I remembered that I initially wanted to join the technology field to be better equipped to tackle social issues. I have been lucky enough to work in Uganda for underprivileged children. I worked my way up to managing a foster home helping 300-500 children with amazing coworkers. However, it was also a distressing period. I quickly realized how ill-equipped I was to tackle issues that are much bigger than me. Now, I believe empowerment through technology is one way we can improve our societies. 
+
+I believe that you share a similar ideology and I would love to get the chance to work with people of your caliber. I know I can gain tremendous experience with such a successful team dealing with critical issues in modern economies. I hope that I can bring my piece to the puzzle with the technical skills I have acquired over time, mixed with my experience in entrepreneurship and humanities. 
+
+I apologize for the length of this cover letter, concision is one of my weaknesses, and hope you will forgive my informal tone. 
+
+Thank you for your time, and I hope that I will be able to put my Japanese classes into practice soon.
+
+Sincerely,
+
+Jack Misteli
+

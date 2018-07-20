@@ -1,0 +1,3 @@
+Alright so started using a premade wrapper for vue js to make charts after implementing it turns out that cannot make use of a ot of options, so I decided to 'manually' implement the chartjs library. It will probably also be more light weight since its using HTML5
+
+Some super hacky redirecting using Vanilla JS

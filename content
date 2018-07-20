@@ -1,0 +1,21 @@
+	<div id="basics">
+			<ul>
+			<!-- <li>Name: {{user.name}}</li> -->
+			<li>Height: {{user.height}}</li>
+			<li>Weight: {{user.weight}}</li>
+		</ul>
+		</div>
+		<div id="advanced">
+			<ul>
+				<li>Diet Type: {{user.diet_type}}</li>
+				<li>Blood Type: {{user.blood_type}}</li>
+			</ul>	
+		</div>
+		<div id="change">
+		</div>
+		<button v-on:click="showUser">Hey there!</button>
+		<div v-on:click="showBasic" id="select">
+			<div id="to-basic">Basic</div>
+			<div id="to-advanced">Advanced</div>
+			<div id="to-change">Change</div>
+		</div>

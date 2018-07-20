@@ -1,0 +1,21 @@
+<% provide(:title,"Home") %>
+<%= javascript_pack_tag 'homeanimation', 'data-turbolinks-track': 'reload' %>
+<div class="home-container">
+	
+<!-- <div class="home-card"> -->
+	<div class="home-title"><span style="background:rgba(210, 246, 245, 0.99)"> WELCOME TO LITTLE LIFE!</span></div>
+  <div class="home-subtitle">A website to keep track of the<br/> <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "health", "life", "wellbeing", "weight." ]'></span><br/> of your loved ones </div>
+<!-- </div> -->
+  
+
+		<button class="home-btn home-btn-2 home-btn-2g" disabled><%= link_to "Login", '/login' %></button>
+		 <%if !logged_in? %>
+			<button class="home-btn home-btn-2 home-btn-2g" disabled><%= link_to "Sign Up", '/signup' %></button>
+  		<% end %>
+
+  </div>
+
+  

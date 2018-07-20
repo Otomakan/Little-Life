@@ -1,0 +1,20 @@
+<% provide(:title, "Log in") %>
+
+
+<div class="static-container">
+  <h1>Log in</h1>
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: ['form-control', 'login-form'] %>
+      <br>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: ['form-control', 'login-form'] %>
+
+      <%= f.submit "Log in", class: "home-btn home-btn-2 home-btn-2g" %>
+    <% end %>
+
+    <p>New user? </p>
+    <buttton class="home-btn home-btn-2 home-btn-2g"><%= link_to "Sign up!", signup_path %></button>
+  </div>

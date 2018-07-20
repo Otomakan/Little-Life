@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calories: MyText
+  day: 2018-06-21
+  user: one
+
+two:
+  calories: MyText
+  day: 2018-06-21
+  user: two

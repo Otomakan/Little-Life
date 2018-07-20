@@ -1,0 +1,15 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<%= content_tag :div,
+      id:"user-board",
+      data:{
+            user: @user.to_json()
+      } do %>
+		<user-profile :user="<%= @user.to_json() %>" weight="<%= @user.weight.last["weight"]%>" height="<%= @user.height.last["height"]%>"></user-profile>
+
+	<div id="main-user-content">
+		<data-feed :user_id="<%=@user.id%>" :comment="<%= @user.comment.order(created_at: :asc).find_each.to_json()%>"></data-feed>
+		
+	</div>
+	</div>
+	<% end -%>
